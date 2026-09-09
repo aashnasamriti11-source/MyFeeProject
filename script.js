@@ -8,7 +8,7 @@ const mediaData = [
   {
     id: "m1",
     type: "movie",
-    title: "Inteseller",
+    title: "Interstellar",
     genre: "Sci-Fi",
     trailerUrl: "https://www.youtube.com/embed/HYVxnPmb15E",
     thumbnail: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2021/08/19085635/gEU2QniE6E77NI6lCU6MxlNBvIx-scaled.jpg"
@@ -22,13 +22,13 @@ const mediaData = [
     thumbnail: "https://m.media-amazon.com/images/M/MV5BMjk1NzcwMDUtNDU4ZC00MzlhLTkzZjAtM2MxMTRjZGE0ODdhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
   },
   {
-  id: "m3",
-  type: "movie",
-  title: "HomeAlone",
-  genre: "Drama",
-  trailerUrl: "https://www.youtube.com/embed/dzdpqRGA1qc",
-  thumbnail: "https://image.tmdb.org/t/p/original/r2kJFsLB4znZmAzreiMg1Bpv0cz.jpg"
-},
+    id: "m3",
+    type: "movie",
+    title: "Home Alone",
+    genre: "Drama",
+    trailerUrl: "https://www.youtube.com/embed/dzdpqRGA1qc",
+    thumbnail: "https://image.tmdb.org/t/p/original/r2kJFsLB4znZmAzreiMg1Bpv0cz.jpg"
+  },
   {
     id: "m4",
     type: "movie",
@@ -42,7 +42,7 @@ const mediaData = [
     type: "movie",
     title: "Drishyam 2",
     genre: "Adventure",
-   trailerUrl: "https://www.youtube.com/embed/tOdJlNKquls",
+    trailerUrl: "https://www.youtube.com/embed/tOdJlNKquls",
     thumbnail: "https://assetscdn1.paytm.com/images/cinema/Drishyam-min-f607e2e0-4d39-11ed-a279-f56421cde6f2.jpg?format=webp"
   },
   {
@@ -50,7 +50,7 @@ const mediaData = [
     type: "movie",
     title: "The Dark Knight",
     genre: "Thriller",
-   trailerUrl: "https://www.youtube.com/embed/EXeTwQWrcwY",
+    trailerUrl: "https://www.youtube.com/embed/EXeTwQWrcwY",
     thumbnail: "https://media.themoviedb.org/t/p/w440_and_h660_face/xQPgyZOBhaz1GdCQIPf5A5VeFzO.jpg"
   },
   {
@@ -58,14 +58,14 @@ const mediaData = [
     type: "movie",
     title: "Ra-One",
     genre: "Sci-Fi",
-   trailerUrl: "https://www.youtube.com/embed/o8sXsbI2dXE",
+    trailerUrl: "https://www.youtube.com/embed/o8sXsbI2dXE",
     thumbnail: "https://images.static-bluray.com/products/20/9053_3_front.jpg"
   },
   {
     id: "m8",
     type: "movie",
     title: "Mad Max: Fury Road",
-    genre:"Action",
+    genre: "Action",
     trailerUrl: "https://www.youtube.com/embed/hEJnMQG9ev8",
     thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e3585170042969.5b96d5b6bab8d.jpg"
   },
@@ -74,7 +74,7 @@ const mediaData = [
     type: "movie",
     title: "URI",
     genre: "Action",
-   trailerUrl: "https://www.youtube.com/embed/6SSbCbudN3o",
+    trailerUrl: "https://www.youtube.com/embed/6SSbCbudN3o",
     thumbnail: "https://e1.pxfuel.com/desktop-wallpaper/749/275/desktop-wallpaper-uri-movie-first-look-poster-uri-the-surgical-strike.jpg"
   },
   {
@@ -96,7 +96,7 @@ const mediaData = [
   {
     id: "m12",
     type: "movie",
-    title: "Inseption",
+    title: "Inception",
     genre: "Action",
     trailerUrl: "https://www.youtube.com/embed/Qwe6qXFTdgc",
     thumbnail: "https://tse2.mm.bing.net/th/id/OIP.vnJImFIy1GEoBBAjyZ-tfQHaK-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -116,7 +116,7 @@ const mediaData = [
     type: "series",
     title: "Peaky Blinders",
     genre: "Crime",
-   trailerUrl: "https://www.youtube.com/embed/oVzVdvGIC7U",
+    trailerUrl: "https://www.youtube.com/embed/oVzVdvGIC7U",
     thumbnail: "https://artworks.thetvdb.com/banners/v4/series/270915/posters/64b454ab22442.jpg"
   },
   {
@@ -124,7 +124,7 @@ const mediaData = [
     type: "series",
     title: "The Crown",
     genre: "Drama",
-   trailerUrl: "https://www.youtube.com/embed/JWtnJjn6ng0",
+    trailerUrl: "https://www.youtube.com/embed/JWtnJjn6ng0",
     thumbnail: "https://www.themoviedb.org/t/p/original/xoRYlOQMCooz3jcwdtt348qB9oj.jpg"
   },
   {
@@ -132,7 +132,7 @@ const mediaData = [
     type: "series",
     title: "Sherlock",
     genre: "Crime",
-   trailerUrl: "https://www.youtube.com/embed/4Vq4s8n8vxw",
+    trailerUrl: "https://www.youtube.com/embed/4Vq4s8n8vxw",
     thumbnail: "https://i.pinimg.com/originals/d2/04/24/d204240200856ccb56f0ade18b19158d.jpg"
   },
   {
@@ -141,7 +141,7 @@ const mediaData = [
     title: "Panchayat",
     genre: "Drama",
     trailerUrl: "https://www.youtube.com/embed/mojZJ7oeD_g",
-     thumbnail: "https://images.justwatch.com/poster/316699631/s718/season-4.jpg"
+    thumbnail: "https://images.justwatch.com/poster/316699631/s718/season-4.jpg"
   },
   {
     id: "s6",
@@ -155,8 +155,8 @@ const mediaData = [
     id: "s7",
     type: "series",
     title: "Lost",
-    genre: "Sci-fi",
-   trailerUrl: "https://www.youtube.com/embed/KTu8iDynwNc",
+    genre: "Sci-Fi",
+    trailerUrl: "https://www.youtube.com/embed/KTu8iDynwNc",
     thumbnail: "https://images.plex.tv/photo?size=large-1280&scale=1&url=https:%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FpoGAFZaSrl1Gf57neIEsbmFt2zb.jpg"
   },
   {
@@ -178,7 +178,7 @@ const mediaData = [
   {
     id: "s10",
     type: "series",
-    title: "House of the dragon",
+    title: "House of the Dragon",
     genre: "Fantasy",
     trailerUrl: "https://www.youtube.com/embed/DotnJ7tTA34",
     thumbnail: "https://static1.colliderimages.com/wordpress/wp-content/uploads/sharedimages/2025/06/03165325_poster_w780-1.jpg"
@@ -202,7 +202,6 @@ const mediaData = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-
   const movieGrid = document.getElementById("movieGrid");
   const seriesGrid = document.getElementById("seriesGrid");
   const filterButtons = document.querySelectorAll(".filter-btn");
@@ -213,17 +212,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("closeModal");
 
   // ---------------------------------------------------------
-  // RENDER CARDS
+  // RENDER CARDS FUNCTION
   // ---------------------------------------------------------
-
   function renderCards(container, type, activeGenre = "All") {
-
     if (!container) return;
 
     const items = mediaData.filter((item) => {
-
       const matchType = item.type === type;
-
       const matchGenre =
         activeGenre === "All" ||
         item.genre.toLowerCase() === activeGenre.toLowerCase();
@@ -234,19 +229,15 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = "";
 
     if (items.length === 0) {
-
-      container.innerHTML =
-        `<p style="color: #74767b; grid-column: 1 / -1;">
+      container.innerHTML = `
+        <p style="color: #74767b; grid-column: 1 / -1;">
           No ${type}s found for this genre.
         </p>`;
-
       return;
     }
 
     items.forEach((item) => {
-
       const card = document.createElement("div");
-
       card.className = `${type}-card`;
 
       card.innerHTML = `
@@ -254,7 +245,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="play-circle">▶</div>
           <span class="thumb-title">${item.title}</span>
         </div>
-
         <div class="card-content">
           <h3>${item.title}</h3>
           <p class="meta">Genre: ${item.genre}</p>
@@ -274,7 +264,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // INITIAL RENDER
   // ---------------------------------------------------------
-
   if (movieGrid) {
     renderCards(movieGrid, "movie");
   }
@@ -286,11 +275,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // GENRE FILTERING
   // ---------------------------------------------------------
-
   filterButtons.forEach((button) => {
-
     button.addEventListener("click", () => {
-
       filterButtons.forEach((btn) => {
         btn.classList.remove("active");
       });
@@ -312,35 +298,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // VIDEO MODAL LOGIC
   // ---------------------------------------------------------
-
   function openModal(videoSrc) {
-
     if (!videoModal || !modalVideo || !videoSrc) {
       return;
     }
 
     modalVideo.src = videoSrc + "?autoplay=1&rel=0";
-
     videoModal.classList.add("show");
   }
 
   function closeModal() {
-
     if (!videoModal || !modalVideo) {
       return;
     }
 
     videoModal.classList.remove("show");
-
     modalVideo.src = "";
   }
 
   // ---------------------------------------------------------
   // CLOSE BUTTON
   // ---------------------------------------------------------
-
   if (closeModalBtn) {
-
     closeModalBtn.addEventListener("click", () => {
       closeModal();
     });
@@ -349,11 +328,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // CLOSE WHEN CLICKING OUTSIDE MODAL BOX
   // ---------------------------------------------------------
-
   if (videoModal) {
-
     videoModal.addEventListener("click", (e) => {
-
       if (e.target === videoModal) {
         closeModal();
       }
@@ -363,9 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // CLOSE WITH ESCAPE KEY
   // ---------------------------------------------------------
-
   document.addEventListener("keydown", (e) => {
-
     if (
       e.key === "Escape" &&
       videoModal &&
@@ -378,19 +352,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------------------------------------------------
   // HERO "WATCH NOW" BUTTON
   // ---------------------------------------------------------
-
-  const heroWatchBtn =
-    document.querySelector(".hero .watch-button");
+  const heroWatchBtn = document.querySelector(".hero .watch-button");
 
   if (heroWatchBtn) {
-
     heroWatchBtn.addEventListener("click", () => {
-
-      openModal(
-        "https://www.youtube.com/embed/HYVxnPmb15E"
-      );
-
+      openModal("https://www.youtube.com/embed/HYVxnPmb15E");
     });
   }
-
 });

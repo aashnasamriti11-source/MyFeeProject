@@ -1,869 +1,393 @@
 /* =========================================================
-   STREAMX - SHARED CSS
+   STREAMX - STYLESHEET (BLACK & LIME THEME)
    ========================================================= */
 
+/* --- RESET & GLOBAL STYLES --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: #090a0b;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0c0c0c;
+    color: #ffffff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-/* =========================================================
-   LOGO
-   ========================================================= */
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4%;
+    background-color: #0c0c0c;
+    border-bottom: 1px solid #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 14px;
-    font-size: 27px;
-    font-weight: 800;
+    gap: 0.6rem;
 }
 
 .logo-box {
-    width: 54px;
-    height: 54px;
-    background: #eaff32;
-    color: #090a0b;
-    border-radius: 13px;
-
+    background-color: #d4f01d;
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.4rem;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 32px;
-    font-weight: 900;
-
-    transform: rotate(-5deg);
+    border-radius: 6px;
 }
 
 .logo-text {
-    letter-spacing: -1px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: lowercase;
 }
 
 .logo-text span {
-    color: #eaff32;
+    color: #d4f01d;
+    text-transform: uppercase;
 }
 
-
-/* =========================================================
-   HOMEPAGE NAVBAR
-   ========================================================= */
-
-.navbar {
-    height: 84px;
-
-    border-bottom: 1px solid #202225;
-
+/* RIGHT side nav wrapper */
+.nav-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    padding: 0 48px;
-
-    background: #090a0b;
-}
-
-.nav-area {
-    display: flex;
-    align-items: center;
-    gap: 45px;
+    gap: 2.5rem;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 2.2rem;
 }
-
-
-/* ---------------------------------------------------------
-   NON-WORKING NAV ITEMS
-   --------------------------------------------------------- */
-
-.nav-link {
-    color: #74767b;
-
-    font-size: 16px;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    cursor: default;
-
-    position: relative;
-    padding: 31px 0;
-}
-
-
-/* Home is shown as active */
-
-.nav-link.active {
-    color: white;
-}
-
-.nav-link.active::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    height: 4px;
-
-    background: #eaff32;
-}
-
-
-/* ---------------------------------------------------------
-   WORKING MOVIES + SERIES LINKS
-   --------------------------------------------------------- */
 
 .working-link {
-    color: #74767b;
-
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 600;
-
-    text-decoration: none;
-
-    transition: 0.2s;
+    color: #8e8e93;
+    transition: color 0.2s ease-in-out;
+    padding: 0.3rem 0;
 }
 
 .working-link:hover {
-    color: white;
+    color: #ffffff;
 }
 
+.working-link.active {
+    color: #d4f01d;
+}
 
-/* =========================================================
-   NAVIGATION ICONS
-   ========================================================= */
-
+/* SEARCH & PROFILE BUTTONS */
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 0.8rem;
 }
 
-.nav-icon {
-    color: white;
-
-    font-size: 25px;
-
-    cursor: default;
-}
-
-.sun {
-    font-size: 27px;
-}
-
-.profile {
-    width: 50px;
-    height: 50px;
-
-    border: 1px solid #303338;
-
-    border-radius: 50%;
-
+.icon-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #282828;
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-weight: bold;
-    color: white;
-
-    cursor: default;
-}
-
-
-/* =========================================================
-   HOMEPAGE HERO
-   ========================================================= */
-
-.hero {
-    min-height: calc(100vh - 84px);
-
-    display: flex;
-
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 70px 8%;
-}
-
-.hero-left {
-    width: 55%;
-
-    padding-top: 10px;
-
-    z-index: 2;
-}
-
-.original {
-    color: #eaff32;
-
-    font-size: 15px;
-
-    font-weight: 900;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 38px;
-}
-
-.hero-title {
-    font-size: clamp(65px, 7vw, 115px);
-
-    line-height: 0.88;
-
-    letter-spacing: -6px;
-
-    font-weight: 900;
-
-    max-width: 650px;
-
-    margin-bottom: 35px;
-}
-
-
-/* =========================================================
-   HERO INFORMATION
-   ========================================================= */
-
-.movie-info {
-    display: flex;
-
-    gap: 12px;
-
-    margin-bottom: 30px;
-}
-
-.info-box {
-    background: #181b1f;
-
-    border: 1px solid #292d31;
-
-    border-radius: 4px;
-
-    padding: 11px 14px;
-
-    color: #bfc2c7;
-
-    font-size: 13px;
-
-    font-weight: 600;
-}
-
-.description {
-    color: #bfc3ca;
-
-    font-size: 18px;
-
-    line-height: 1.7;
-
-    max-width: 700px;
-
-    margin-bottom: 35px;
-}
-
-
-/* =========================================================
-   HERO BUTTONS
-   ========================================================= */
-
-.hero-buttons {
-    display: flex;
-
-    gap: 14px;
-}
-
-.watch-button {
-    border: none;
-
-    background: #eaff32;
-
-    color: #101112;
-
-    font-size: 16px;
-
-    font-weight: 800;
-
-    padding: 18px 28px;
-
-    border-radius: 6px;
-
     cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.watch-button span {
-    margin-right: 10px;
+.icon-btn:hover {
+    background-color: #262626;
+    border-color: #383838;
 }
 
-.list-button {
-    background: transparent;
-
-    border: 1px solid #303338;
-
-    color: white;
-
-    padding: 18px 30px;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-
+.profile-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #282828;
+    color: #ffffff;
+    padding: 0.65rem 1.4rem;
+    border-radius: 12px;
     font-weight: 700;
-
-    cursor: pointer;
-}
-
-
-/* =========================================================
-   HERO POSTER
-   ========================================================= */
-
-.hero-right {
-    width: 45%;
-
-    position: relative;
-
-    display: flex;
-
-    justify-content: center;
-
+    font-size: 1rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    display: inline-flex;
     align-items: center;
-}
-.poster {
-    width: 380px;
-    height: 540px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    background: linear-gradient(
-        160deg,
-        #1c2024 0%,
-        #111315 40%,
-        #0a0b0c 100%
-    );
-    transform: rotate(3deg);
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: 
-        -40px 20px 100px rgba(234, 255, 50, 0.04),
-        0 20px 60px rgba(0, 0, 0, 0.8);
+    justify-content: center;
 }
 
-.poster::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at 10% 10%,
-        rgba(255, 255, 255, 0.05),
-        transparent 60%
-    );
-    pointer-events: none;
+.profile-btn:hover {
+    background-color: #262626;
+    border-color: #383838;
 }
 
-.poster-label {
-    position: absolute;
-    bottom: 28px;
-    left: 28px;
-    color: #eaff32;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    z-index: 3;
-}
-
-
-/* =========================================================
-   ORBIT EFFECT
-   ========================================================= */
-
-.orbit {
-    position: absolute;
-
-    width: 650px;
-    height: 270px;
-
-    border: 1px solid rgba(234, 255, 50, 0.15);
-
-    border-radius: 50%;
-
-    transform: rotate(-25deg);
-
-    right: -150px;
-
-    top: 150px;
-}
-
-.orbit.two {
-    width: 620px;
-    height: 230px;
-
-    right: -110px;
-    top: 190px;
-
-    transform: rotate(-20deg);
-}
-
-
-/* =========================================================
-   MOVIES / SERIES PAGE
-   ========================================================= */
-
+/* --- MAIN PAGE CONTENT --- */
 .page {
-    padding: 55px 7%;
+    flex: 1;
+    padding: 2.5rem 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .page-title {
-    font-size: 50px;
-
-    font-weight: 900;
-
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
 }
 
 .page-subtitle {
-    color: #888b90;
-
-    margin-bottom: 35px;
+    color: #8e8e93;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
-
-/* =========================================================
-   FILTER BUTTONS
-   ========================================================= */
-
+/* --- FILTERS --- */
 .filters {
     display: flex;
-
-    gap: 12px;
-
     flex-wrap: wrap;
-
-    margin-bottom: 40px;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
 }
 
 .filter-btn {
-    background: #151719;
-
-    color: #aaaeb4;
-
-    border: 1px solid #292c30;
-
-    padding: 11px 20px;
-
-    border-radius: 5px;
-
+    background-color: #1e1e1e;
+    color: #8e8e93;
+    border: none;
+    padding: 0.55rem 1.2rem;
+    border-radius: 6px;
     cursor: pointer;
-
-    font-weight: 600;
-
-    transition: 0.2s;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
 }
 
-.filter-btn:hover,
+.filter-btn:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
 .filter-btn.active {
-    background: #eaff32;
-
-    color: #090a0b;
-
-    border-color: #eaff32;
+    background-color: #d4f01d;
+    color: #000000;
+    font-weight: 600;
 }
 
-
-/* =========================================================
-   MOVIE & SERIES GRIDS
-   ========================================================= */
-
+/* --- MEDIA GRID & CARDS --- */
 .movie-grid,
 .series-grid {
     display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.8rem;
 }
-
-
-/* =========================================================
-   MOVIE + SERIES CARDS
-   ========================================================= */
 
 .movie-card,
 .series-card {
-    background: #111315;
-
-    border: 1px solid #222529;
-
-    border-radius: 8px;
-
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-radius: 10px;
     overflow: hidden;
-
-    transition: 0.25s;
-
     cursor: pointer;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .movie-card:hover,
 .series-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #454a50;
+    transform: translateY(-7px);
+    border-color: #333333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
-
-
-/* =========================================================
-   THUMBNAILS
-   ========================================================= */
 
 .thumbnail {
+    width: 100%;
     height: 310px;
-
-    position: relative;
-
-    display: flex;
-
-    align-items: flex-end;
-
-    padding: 20px;
-
-    overflow: hidden;
-
     background-size: cover;
-
     background-position: center;
-}
-
-.thumbnail::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            transparent 35%,
-            rgba(0, 0, 0, 0.85)
-        );
-
-    z-index: 1;
-}
-
-.thumb-title {
     position: relative;
-
-    z-index: 2;
-
-    font-size: 25px;
-
-    font-weight: 900;
-
-    color: #ffffff;
-
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: flex-end;
 }
 
-
-/* =========================================================
-   PLAY BUTTON OVERLAY
-   ========================================================= */
-
+/* Play Overlay Icon */
 .play-circle {
     position: absolute;
-
-    z-index: 3;
-
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
-    width: 58px;
-    height: 58px;
-
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 240, 29, 0.9);
+    color: #000000;
     border-radius: 50%;
-
-    background: #eaff32;
-
-    color: #090a0b;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
+    font-size: 1.2rem;
     opacity: 0;
-
-    transition: 0.25s;
-
-    font-size: 20px;
-
-    padding-left: 3px;
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+    padding-left: 3px; /* visual center for play arrow */
 }
 
 .movie-card:hover .play-circle,
 .series-card:hover .play-circle {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
-
-/* =========================================================
-   CARD CONTENT
-   ========================================================= */
+.thumb-title {
+    width: 100%;
+    background: linear-gradient(transparent, rgba(20, 20, 20, 0.95));
+    padding: 1rem 0.8rem 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .card-content {
-    padding: 18px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .card-content h3 {
-    font-size: 19px;
-
-    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.meta {
-    color: #858990;
-
-    font-size: 13px;
-
-    line-height: 1.6;
+.card-content .meta {
+    font-size: 0.85rem;
+    color: #8e8e93;
 }
-
-
-/* =========================================================
-   WATCH BUTTON
-   ========================================================= */
 
 .watch-btn {
-    width: 100%;
-
-    margin-top: 15px;
-
-    padding: 11px;
-
+    margin-top: 0.5rem;
+    background-color: #d4f01d;
+    color: #000000;
     border: none;
-
+    padding: 0.5rem 0;
     border-radius: 5px;
-
-    background: #eaff32;
-
-    color: #090a0b;
-
-    font-weight: 800;
-
+    font-weight: 600;
     cursor: pointer;
-
-    transition: 0.2s;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .watch-btn:hover {
-    opacity: 0.85;
+    background-color: #e5ff24;
 }
 
-
-/* =========================================================
-   VIDEO MODAL
-   ========================================================= */
-
+/* --- VIDEO MODAL --- */
 .modal {
     display: none;
-
     position: fixed;
-
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.88);
-
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
-
-    align-items: center;
-
     justify-content: center;
-
-    padding: 20px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .modal.show {
     display: flex;
+    opacity: 1;
 }
 
 .modal-box {
-    width: min(900px, 100%);
-
-    background: #111315;
-
-    border: 1px solid #303338;
-
-    border-radius: 10px;
-
-    padding: 20px;
-
     position: relative;
+    width: 90%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(212, 240, 29, 0.2);
 }
 
 .modal-box iframe {
     width: 100%;
-
-    aspect-ratio: 16 / 9;
-
-    display: block;
-
+    height: 100%;
     border: none;
-
-    border-radius: 6px;
 }
 
 .close-btn {
     position: absolute;
-
-    top: -45px;
-
-    right: 0;
-
-    background: transparent;
-
+    top: -12px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    background-color: #d4f01d;
+    color: #000000;
     border: none;
-
-    color: white;
-
-    font-size: 30px;
-
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
+    z-index: 1010;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+.close-btn:hover {
+    background-color: #ffffff;
+}
 
-/* =========================================================
-   RESPONSIVE - TABLET
-   ========================================================= */
-
-@media (max-width: 1000px) {
-
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
     .navbar {
-        padding: 0 25px;
-    }
-
-    .nav-links {
-        gap: 18px;
-    }
-
-    .nav-area {
-        gap: 20px;
-    }
-
-    .hero {
-        padding: 50px 6%;
-    }
-
-    .hero-title {
-        font-size: 70px;
-    }
-
-    .poster {
-        width: 300px;
-
-        height: 440px;
-    }
-
-    .movie-grid,
-    .series-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-/* =========================================================
-   RESPONSIVE - MOBILE
-   ========================================================= */
-
-@media (max-width: 750px) {
-
-    .navbar {
-        height: auto;
-
-        min-height: 75px;
-
-        padding: 15px 20px;
-    }
-
-    .nav-actions {
-        display: none;
-    }
-
-    .nav-links {
-        gap: 15px;
-    }
-
-    .nav-link,
-    .working-link {
-        font-size: 13px;
-    }
-
-    .hero {
         flex-direction: column;
+        gap: 1rem;
     }
 
-    .hero-left,
-    .hero-right {
-        width: 100%;
-    }
-
-    .hero-right {
-        margin-top: 60px;
-    }
-
-    .hero-title {
-        font-size: 65px;
-    }
-
-    .movie-grid,
-    .series-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* =========================================================
-   RESPONSIVE - SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 500px) {
-
-    .movie-grid,
-    .series-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-title {
-        font-size: 52px;
-
-        letter-spacing: -3px;
-    }
-
-    .movie-info {
-        flex-wrap: wrap;
-    }
-
-    .hero-buttons {
+    .nav-right {
         flex-direction: column;
+        gap: 1rem;
     }
 
-    .watch-button,
-    .list-button {
-        width: 100%;
+    .movie-grid,
+    .series-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .thumbnail {
+        height: 220px;
     }
 }
