@@ -1,0 +1,869 @@
+/* =========================================================
+   STREAMX - SHARED CSS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090a0b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.logo-box {
+    width: 54px;
+    height: 54px;
+    background: #eaff32;
+    color: #090a0b;
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    transform: rotate(-5deg);
+}
+
+.logo-text {
+    letter-spacing: -1px;
+}
+
+.logo-text span {
+    color: #eaff32;
+}
+
+
+/* =========================================================
+   HOMEPAGE NAVBAR
+   ========================================================= */
+
+.navbar {
+    height: 84px;
+
+    border-bottom: 1px solid #202225;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 48px;
+
+    background: #090a0b;
+}
+
+.nav-area {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+
+/* ---------------------------------------------------------
+   NON-WORKING NAV ITEMS
+   --------------------------------------------------------- */
+
+.nav-link {
+    color: #74767b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: default;
+
+    position: relative;
+    padding: 31px 0;
+}
+
+
+/* Home is shown as active */
+
+.nav-link.active {
+    color: white;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 4px;
+
+    background: #eaff32;
+}
+
+
+/* ---------------------------------------------------------
+   WORKING MOVIES + SERIES LINKS
+   --------------------------------------------------------- */
+
+.working-link {
+    color: #74767b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.working-link:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   NAVIGATION ICONS
+   ========================================================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-icon {
+    color: white;
+
+    font-size: 25px;
+
+    cursor: default;
+}
+
+.sun {
+    font-size: 27px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #303338;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: white;
+
+    cursor: default;
+}
+
+
+/* =========================================================
+   HOMEPAGE HERO
+   ========================================================= */
+
+.hero {
+    min-height: calc(100vh - 84px);
+
+    display: flex;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 70px 8%;
+}
+
+.hero-left {
+    width: 55%;
+
+    padding-top: 10px;
+
+    z-index: 2;
+}
+
+.original {
+    color: #eaff32;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 38px;
+}
+
+.hero-title {
+    font-size: clamp(65px, 7vw, 115px);
+
+    line-height: 0.88;
+
+    letter-spacing: -6px;
+
+    font-weight: 900;
+
+    max-width: 650px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   HERO INFORMATION
+   ========================================================= */
+
+.movie-info {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: #181b1f;
+
+    border: 1px solid #292d31;
+
+    border-radius: 4px;
+
+    padding: 11px 14px;
+
+    color: #bfc2c7;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.description {
+    color: #bfc3ca;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+}
+
+.watch-button {
+    border: none;
+
+    background: #eaff32;
+
+    color: #101112;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    padding: 18px 28px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.watch-button span {
+    margin-right: 10px;
+}
+
+.list-button {
+    background: transparent;
+
+    border: 1px solid #303338;
+
+    color: white;
+
+    padding: 18px 30px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO POSTER
+   ========================================================= */
+
+.hero-right {
+    width: 45%;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+.poster {
+    width: 380px;
+    height: 540px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: linear-gradient(
+        160deg,
+        #1c2024 0%,
+        #111315 40%,
+        #0a0b0c 100%
+    );
+    transform: rotate(3deg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 
+        -40px 20px 100px rgba(234, 255, 50, 0.04),
+        0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.poster::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 10% 10%,
+        rgba(255, 255, 255, 0.05),
+        transparent 60%
+    );
+    pointer-events: none;
+}
+
+.poster-label {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    color: #eaff32;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    z-index: 3;
+}
+
+
+/* =========================================================
+   ORBIT EFFECT
+   ========================================================= */
+
+.orbit {
+    position: absolute;
+
+    width: 650px;
+    height: 270px;
+
+    border: 1px solid rgba(234, 255, 50, 0.15);
+
+    border-radius: 50%;
+
+    transform: rotate(-25deg);
+
+    right: -150px;
+
+    top: 150px;
+}
+
+.orbit.two {
+    width: 620px;
+    height: 230px;
+
+    right: -110px;
+    top: 190px;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =========================================================
+   MOVIES / SERIES PAGE
+   ========================================================= */
+
+.page {
+    padding: 55px 7%;
+}
+
+.page-title {
+    font-size: 50px;
+
+    font-weight: 900;
+
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #888b90;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+   ========================================================= */
+
+.filters {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: #151719;
+
+    color: #aaaeb4;
+
+    border: 1px solid #292c30;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #eaff32;
+
+    color: #090a0b;
+
+    border-color: #eaff32;
+}
+
+
+/* =========================================================
+   MOVIE & SERIES GRIDS
+   ========================================================= */
+
+.movie-grid,
+.series-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   MOVIE + SERIES CARDS
+   ========================================================= */
+
+.movie-card,
+.series-card {
+    background: #111315;
+
+    border: 1px solid #222529;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.25s;
+
+    cursor: pointer;
+}
+
+.movie-card:hover,
+.series-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #454a50;
+}
+
+
+/* =========================================================
+   THUMBNAILS
+   ========================================================= */
+
+.thumbnail {
+    height: 310px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.thumbnail::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0, 0, 0, 0.85)
+        );
+
+    z-index: 1;
+}
+
+.thumb-title {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================================================
+   PLAY BUTTON OVERLAY
+   ========================================================= */
+
+.play-circle {
+    position: absolute;
+
+    z-index: 3;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #eaff32;
+
+    color: #090a0b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: 0.25s;
+
+    font-size: 20px;
+
+    padding-left: 3px;
+}
+
+.movie-card:hover .play-circle,
+.series-card:hover .play-circle {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+.meta {
+    color: #858990;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   WATCH BUTTON
+   ========================================================= */
+
+.watch-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #eaff32;
+
+    color: #090a0b;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.watch-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   VIDEO MODAL
+   ========================================================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.88);
+
+    z-index: 1000;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    width: min(900px, 100%);
+
+    background: #111315;
+
+    border: 1px solid #303338;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    position: relative;
+}
+
+.modal-box iframe {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    display: block;
+
+    border: none;
+
+    border-radius: 6px;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: -45px;
+
+    right: 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-area {
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero-title {
+        font-size: 70px;
+    }
+
+    .poster {
+        width: 300px;
+
+        height: 440px;
+    }
+
+    .movie-grid,
+    .series-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 75px;
+
+        padding: 15px 20px;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-link,
+    .working-link {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right {
+        margin-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 65px;
+    }
+
+    .movie-grid,
+    .series-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .movie-grid,
+    .series-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 52px;
+
+        letter-spacing: -3px;
+    }
+
+    .movie-info {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .watch-button,
+    .list-button {
+        width: 100%;
+    }
+}
